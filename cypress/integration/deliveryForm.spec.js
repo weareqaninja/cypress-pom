@@ -35,7 +35,7 @@ describe('Delivery', () => {
 
     it('fails on invalid email format', () => {
       cy.task('consumerFactory').then(consumer => {
-        consumer.email = 'walmyr.filho.com'
+        consumer.email = 'opa.br.com'
 
         cy.fillForm(consumer)
         cy.get('@submitButton').click()
